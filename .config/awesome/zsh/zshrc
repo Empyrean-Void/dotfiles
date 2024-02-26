@@ -1,0 +1,44 @@
+# Lines configured by zsh-newuser-install
+setopt autocd extendedglob nomatch
+unsetopt beep notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '$HOME/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Prompt #
+autoload -Uz promptinit
+promptinit
+prompt adam1
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Exports #
+source $HOME/.config/awesome/zsh/zshenv
+
+# Aliases #
+
+# Neovim
+alias vi="nvim"
+alias svi="sudoedit"
+
+# Files
+alias ls="eza -lah --icons"
+
+# Git
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gcl="git clone"
+alias gpl="git pull"
+
+# Top
+alias top="btop"
+
+# Ranger
+alias lf="ranger"
