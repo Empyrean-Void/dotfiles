@@ -1,0 +1,2 @@
+alias ls='eza -alh --icons'
+alias vi='nvim'
